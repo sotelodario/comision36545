@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tradulab</title>
+    <link rel="stylesheet" href="styles/estilos.css" />
+  </head>
+  <body>
+    <header id="menu">
+      <a href="index.html"
+        ><img src="imagenes/logo.png" alt="logo" class="imagen-header"
+      /></a>
+      <nav>
+        <ul class="ul">
+          <li><a href="index.html"> Inicio</a></li>
+          <li><a href="secciones/quienes_somos.html"> Quienes Somos?</a></li>
+          <li><a href="secciones/servicios.html"> Servicios</a></li>
+          <li><a href="secciones/novedades.html"> Novedades</a></li>
+          <li>
+            <a href="secciones/trabaja_con_nosotros.html">
+              Trabaja con nosotros
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="img-index">
+          <div id="intro">
+            Una central de traducciones para el mundo.
+            <br />
+            En TRADULAB vas a encontrar soluciones lingüísticas acordes a tus
+            necesidades.
+          </div>
+          <div class="boton">
+            <input type="submit" value="   Pedir presupuesto   " id="button" />
+          </div>
+        </div>
+        <div id="intro2">
+          <h2>Quienes Somos???</h2>
+          Se basa en lograr encontrar el traductor perfecto que el cliente
+          necesita y nuestra misión consiste en que el cliente expanda su
+          negocio globalmente, llegando cada vez a más mercados y cumpliendo sus
+          objetivos. Así como creemos que nuestros clientes son nuestra
+          prioridad, también apoyamos a nuestros traductores brindándoles cursos
+          y materiales didácticos, lo que permite su continuo perfeccionamiento
+          y profesionalización.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="informacion">
+        <h3>Información</h3>
+        teléfono: +54 9 999 9999 <br />
+        Lunes a Viernes: 9.00 hs - 20.00 hs <br />
+        Mail de contacto:
+        <a href="mailto:info@tradulab.com">info@tradulab.com</a>
+        <ul id="footer">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="imagenes/facebook.png" alt="Facebook-Logo" id="redes"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="imagenes/instagram.png"
+                alt="Instagram-Logo"
+                id="redes"
+            /></a>
+            <p></p>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><img src="imagenes/linkedin.png" alt="Linkedin-Logo" id="redes"
+            /></a>
+          </li>
+          <li>
+            <a href="https://web.whatsapp.com/" target="_blank"
+              ><img src="imagenes/whatsapp.png" alt="Whatsapp-Logo" id="redes"
+            /></a>
+          </li>
+        </ul>
+        <div>Copyright © 2022 Dario Sotelo</div>
+      </div>
+
+      <div id="contacto">
+        <form
+          action="enviar.php"
+          method="get"
+          enctype="text/plain"
+          id="contacto"
+        >
+          <!-- esto procesa la info -->
+          <div>
+            <h3>Contacto</h3>
+            <input
+              type="email"
+              id="mail"
+              name="mail"
+              placeholder="ingresá tu email"
+              required
+            />
+          </div>
+
+          <div>
+            <textarea
+              name="multi"
+              id="multi"
+              cols="60"
+              rows="10"
+              placeholder="contanos tu duda"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" value="ENVIAR" id="enviar" />
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
