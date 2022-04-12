@@ -130,6 +130,12 @@ a:active {
   font-size: large;
   padding-bottom: 10vh;
   background-color: rgb(255, 254, 255);
+  transition: all 1s;
+}
+
+#intro2:hover {
+  background-color: bisque;
+  font-size: x-large;
 }
 
 h1,
@@ -201,14 +207,15 @@ h3 {
 .imagenes_secciones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-
   gap: 20px;
 }
+
 .imagenes_secciones img {
   width: 50%;
   height: auto;
   align-items: center;
 }
+
 #detalle_servicios {
   margin-left: 30px;
   margin-right: 30px;
