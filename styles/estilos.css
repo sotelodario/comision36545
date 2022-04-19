@@ -164,9 +164,15 @@ h3 {
   transform: translateY(-1px);
 }
 
-#footer {
+footer ul {
   list-style: none;
   display: flex;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: x-large;
+  margin: 10px;
 }
 
 #redes {
