@@ -220,71 +220,72 @@
       </section>
     </main>
     <footer>
-      <div id="informacion">
-        <h3>Información</h3>
-        teléfono: +54 9 999 9999 <br />
-        Lunes a Viernes: 9.00 hs - 20.00 hs <br />
-        Mail de contacto:
-        <a href="mailto:info@tradulab.com">info@tradulab.com</a>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" target="_blank">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.whatsapp.com/" target="_blank">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-          </li>
-        </ul>
-        <div>Copyright © 2022 Dario Sotelo</div>
-      </div>
-
-      <div id="contacto">
-        <form
-          action="enviar.php"
-          method="get"
-          enctype="text/plain"
-          id="contacto"
-        >
-          <!-- esto procesa la info -->
-          <div>
-            <h3>Contacto</h3>
-            <input
-              type="email"
-              id="mail"
-              name="mail"
-              placeholder="ingresá tu email"
-              required
-            />
+      <section class="footer_container">
+        <div class="row">
+          <div  class="col-sm-12 col-md-6">
+            <div>
+              <h3>Información</h3>
+              teléfono: +54 9 999 9999 <br />
+              Lunes a Viernes: 9.00 hs - 20.00 hs <br />
+              Mail de contacto:
+              <a href="mailto:info@tradulab.com">info@tradulab.com</a>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.whatsapp.com/" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+              <div>Copyright © 2022 Dario Sotelo</div>
+            </div>
           </div>
 
-          <div>
-            <textarea
-              name="multi"
-              id="multi"
-              cols="60"
-              rows="10"
-              placeholder="contanos tu duda"
-              required
-            ></textarea>
+          <div class="col-sm-12 col-md-6">
+            <div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="ingresá tu email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Contanos tu duda!</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+              </div>
+            </div>
           </div>
-          <input type="submit" value="ENVIAR" id="enviar" />
-        </form>
-      </div>
+        </div>
+      </section>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

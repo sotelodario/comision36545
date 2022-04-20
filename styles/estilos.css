@@ -29,6 +29,9 @@ a:hover {
   flex-grow: initial;
 }
 
+#trabaja_con_nosotros {
+  margin: 10px;
+}
 /*main*/
 
 main #servicios {
