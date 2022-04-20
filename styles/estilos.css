@@ -252,6 +252,7 @@ footer ul li {
   #people {
     opacity: 30%;
     width: auto;
+    height: auto;
     background-size: cover;
   }
 }
@@ -264,4 +265,9 @@ footer ul li {
     margin-top: 150px;
     font-size: medium;
   }
+}
+
+.contenedor-responsivo {
+  position: relative;
+  overflow: hidden;
 }
