@@ -88,37 +88,26 @@
         </h3>
         <section>
           <form action="">
-            <div>
-              <input type="text" id="Nombre" required placeholder="Nombre" />
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Juan">
+            </div>
+   
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Perez">
             </div>
 
-            <br />
+        
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juanperez@hotmail.com">
+              </div>          
 
-            <div>
-              <input
-                type="text"
-                id="Apellido"
-                required
-                placeholder="Apellido"
-              />
-            </div>
-
-            <br />
-
-            <div>
-              <input type="text" id="Email" required placeholder="email" />
-            </div>
-
-            <br />
-
-            <div>
-              <input
-                type="text"
-                id="Teléfono"
-                required
-                placeholder="teléfono"
-              />
-            </div>
+              <div class="mb-3">
+                <label for="inputAddress" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="+54 9 11-9999-9999">
+              </div>
 
             <br />
 
@@ -131,8 +120,12 @@
             <br />
 
             <div>
-              Adjuntanos tu CV
-              <input type="file" />
+              Adjuntanos tu CV!
+              <div class="mb-3">
+                <label for="formFile" class="form-label" ></label>
+                <input class="form-control" type="file" id="formFile">
+                
+              </div>
             </div>
 
             <br />

@@ -52,10 +52,6 @@ main #servicios {
   background-size: cover;
 }
 
-#people {
-  width: 650px;
-}
-
 :placeholder-shown {
   background-color: gainsboro;
   border-radius: 7%;
@@ -270,4 +266,8 @@ footer ul li {
 .contenedor-responsivo {
   position: relative;
   overflow: hidden;
+}
+
+.mb-3 {
+  width: 650px;
 }
