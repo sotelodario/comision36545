@@ -1,3 +1,5 @@
+/*main*/
+/*Boton Presupuesto*/
 * {
   margin: 0;
   padding: 0;
@@ -5,37 +7,37 @@
     "Lucida Sans", Arial, sans-serif;
   text-decoration: none;
 }
-
-a:link {
-  color: rgb(59, 48, 48);
-  text-decoration: none;
+a {
+  &:link {
+    color: rgb(59, 48, 48);
+    text-decoration: none;
+  }
+  &:visited {
+    color: rgb(59, 48, 48);
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+    color: white;
+  }
+  &:hover {
+    color: black;
+    font-weight: bolder;
+    text-decoration: solid;
+    font-size: large;
+    transition: all 0.3s ease 0s;
+  }
 }
-a:visited {
-  color: rgb(59, 48, 48);
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-  font-weight: bolder;
-  text-decoration: solid;
-  font-size: large;
-  transition: all 0.3s ease 0s;
-}
-
 #navbarNav {
   flex-grow: initial;
 }
-
 #trabaja_con_nosotros {
   margin: 10px;
 }
-/*main*/
-
-main #servicios {
-  background-image: url(../imagenes/workspace.jpg);
+main {
+  #servicios {
+    background-image: url(../imagenes/workspace.jpg);
+  }
 }
 .img-index {
   background-image: url(../imagenes/inicioTraduccionv2.jpeg);
@@ -44,63 +46,57 @@ main #servicios {
   padding-bottom: 20vh;
   width: auto;
   background-size: cover;
+  z-index: 1;
+  #intro {
+    background-color: transparent;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: xx-large;
+    font-weight: 900;
+  }
 }
-
 #imagenInicio {
   opacity: 40%;
   width: auto;
   background-size: cover;
 }
-
-:placeholder-shown {
+placeholder-shown {
   background-color: gainsboro;
   border-radius: 7%;
 }
-
 .bordesRedondeados {
   border-radius: 5%;
 }
-
 #informacion {
   z-index: 1;
   position: absolute;
 }
-
 #contacto {
   padding: 0 0 0 30vh;
   display: inline-block;
 }
-
 #enviar {
   text-align: right;
 }
-
 footer {
   margin-left: 2vh;
   margin-right: 2vh;
   margin-top: 10vh;
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      list-style: none;
+      font-size: x-large;
+      margin: 10px;
+    }
+  }
 }
-
 body {
   overflow-x: hidden;
-}
-
-.img-index #intro {
-  background-color: transparent;
-}
-
-.img-index #intro {
-  margin-left: 30vh;
-  margin-right: 30vh;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 2;
-  font-size: xx-large;
-  font-weight: 900;
-}
-
-a:active {
-  color: white;
 }
 #intro2 {
   text-align: center;
@@ -109,20 +105,20 @@ a:active {
   padding-bottom: 10vh;
   background-color: rgb(255, 254, 255);
   transition: all 1s;
+  &:hover {
+    background-color: bisque;
+    font-size: x-large;
+  }
 }
-
-#intro2:hover {
-  background-color: bisque;
-  font-size: x-large;
+h1 {
+  background-color: transparent;
 }
-
-h1,
-h2,
+h2 {
+  background-color: transparent;
+}
 h3 {
   background-color: transparent;
 }
-
-/*Boton Presupuesto*/
 .boton {
   width: 80%;
   margin-right: auto;
@@ -132,9 +128,6 @@ h3 {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-}
-.img-index {
-  z-index: 1;
 }
 #button {
   font-size: 15px;
@@ -152,28 +145,16 @@ h3 {
   outline: none;
   z-index: 1;
   align-items: center;
+  &:hover {
+    background-color: #5e6be0;
+    box-shadow: 0px 15px 20px rgba(14, 56, 194, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  &:active {
+    transform: translateY(-1px);
+  }
 }
-#button:hover {
-  background-color: #5e6be0;
-  box-shadow: 0px 15px 20px rgba(14, 56, 194, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-#button:active {
-  transform: translateY(-1px);
-}
-
-footer ul {
-  list-style: none;
-  display: flex;
-}
-
-footer ul li {
-  list-style: none;
-  font-size: x-large;
-  margin: 10px;
-}
-
 #redes {
   width: 45px;
   height: 45px;
@@ -182,61 +163,83 @@ footer ul li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   gap: 20px;
+  img {
+    width: 50%;
+    height: auto;
+    align-items: center;
+  }
 }
-.imagenes_secciones img {
-  width: 50%;
-  height: auto;
-  align-items: center;
-}
-
 #detalle_servicios {
   margin-left: 30px;
   margin-right: 30px;
   text-align: justify;
 }
-
+.contenedor-responsivo {
+  position: relative;
+  overflow: hidden;
+}
+.mb-3 {
+  width: 650px;
+}
 @media screen and (max-width: 1334px) {
-  .img-index #intro {
-    margin-left: 0vh;
-    margin-right: 0vh;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 2;
-    font-size: large;
-    font-weight: 900;
+  .img-index {
+    #intro {
+      margin-left: 0vh;
+      margin-right: 0vh;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 2;
+      font-size: large;
+      font-weight: 900;
+    }
   }
-}
-
-@media screen and (max-width: 920px) {
-  .img-index #intro {
-    margin-left: 0vh;
-    margin-right: 0vh;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 2;
-    font-size: medium;
-    font-weight: 900;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .img-index #intro {
-    margin-left: 0vh;
-    margin-right: 0vh;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 2;
-    font-size: small;
-    font-weight: 900;
-  }
-}
-
-@media screen and (max-width: 1334px) {
   #intro2 {
     font-size: medium;
   }
   .mb-3 {
     width: auto;
+  }
+}
+@media screen and (max-width: 920px) {
+  .img-index {
+    #intro {
+      margin-left: 0vh;
+      margin-right: 0vh;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 2;
+      font-size: medium;
+      font-weight: 900;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .img-index {
+    #intro {
+      margin-left: 0vh;
+      margin-right: 0vh;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 2;
+      font-size: small;
+      font-weight: 900;
+    }
+  }
+  #people {
+    opacity: 30%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+  }
+  .mb-3 {
+    width: auto;
+  }
+  #texto-quienes-somos {
+    position: absolute;
+    opacity: 100%;
+    text-align: center;
+    margin-top: 150px;
+    font-size: medium;
   }
 }
 @media screen and (max-width: 1260px) {
@@ -248,35 +251,4 @@ footer ul li {
   .mb-3 {
     width: auto;
   }
-}
-
-@media screen and (max-width: 760px) {
-  #people {
-    opacity: 30%;
-    width: auto;
-    height: auto;
-    background-size: cover;
-  }
-  .mb-3 {
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  #texto-quienes-somos {
-    position: absolute;
-    opacity: 100%;
-    text-align: center;
-    margin-top: 150px;
-    font-size: medium;
-  }
-}
-
-.contenedor-responsivo {
-  position: relative;
-  overflow: hidden;
-}
-
-.mb-3 {
-  width: 650px;
 }
