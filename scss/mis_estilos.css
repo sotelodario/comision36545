@@ -277,9 +277,9 @@ h3 {
     font-weight: 900;
   }
 
-  @media screen and (max-width: 414px) {
-    #logo {
-      width: 300px;
+  @media screen and (max-width: 375px) {
+    .nav-bar #logo {
+      width: 180px;
     }
   }
 
