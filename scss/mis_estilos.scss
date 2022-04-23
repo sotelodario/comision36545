@@ -225,6 +225,15 @@ h3 {
       font-weight: 900;
     }
   }
+}
+
+@media screen and (max-width: 414) {
+  .navbar-brand {
+    #logo {
+      width: 300px;
+    }
+  }
+
   #people {
     opacity: 30%;
     width: auto;
