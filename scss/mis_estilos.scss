@@ -1,5 +1,5 @@
-/*main*/
-/*Boton Presupuesto*/
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -18,16 +18,17 @@ a {
   }
   &:active {
     text-decoration: none;
-    color: white;
+    color: rgb(55, 252, 6);
   }
   &:hover {
-    color: black;
+    color: rgb(247, 4, 4);
     font-weight: bolder;
     text-decoration: solid;
     font-size: large;
     transition: all 0.3s ease 0s;
   }
 }
+
 #navbarNav {
   flex-grow: initial;
 }
@@ -223,14 +224,6 @@ h3 {
       line-height: 2;
       font-size: small;
       font-weight: 900;
-    }
-  }
-}
-
-@media screen and (max-width: 375) {
-  .navbar-brand {
-    #logo {
-      width: 260px;
     }
   }
 
