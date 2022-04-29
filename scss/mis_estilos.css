@@ -38,12 +38,6 @@ a:hover {
   transition: all 0.3s ease 0s;
 }
 
-#navbarNav {
-  -webkit-box-flex: initial;
-  -ms-flex-positive: initial;
-  flex-grow: initial;
-}
-
 #trabaja_con_nosotros {
   margin: 10px;
 }
@@ -308,5 +302,25 @@ h3 {
   .mb-3 {
     width: auto;
   }
+}
+
+.icon__yellow-fb {
+  color: blue;
+}
+
+.icon__yellow-ig {
+  color: blueviolet;
+}
+
+.icon__yellow-in {
+  color: darkblue;
+}
+
+.icon__yellow-wp {
+  color: yellow;
+}
+
+.color-muestra {
+  background-color: yellow;
 }
 /*# sourceMappingURL=mis_estilos.css.map */

@@ -29,9 +29,6 @@ a {
   }
 }
 
-#navbarNav {
-  flex-grow: initial;
-}
 #trabaja_con_nosotros {
   margin: 10px;
 }
@@ -253,4 +250,27 @@ h3 {
   .mb-3 {
     width: auto;
   }
+}
+
+$red-social: (
+  fb: blue,
+  ig: blueviolet,
+  in: darkblue,
+  wp: yellow,
+);
+
+@each $nombre, $valor in $red-social {
+  .icon__yellow-#{$nombre} {
+    color: $valor;
+  }
+}
+
+$colores: (
+  main: black,
+  base: rgb(223, 43, 43),
+  fondo: aqua,
+);
+
+.color-muestra {
+  background-color: map-get($map: $colores, $key: base);
 }
