@@ -23,12 +23,22 @@ a:visited {
   text-decoration: none;
 }
 
-a:active {
+header a:link {
+  color: #3b3030;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #3b3030;
+  text-decoration: none;
+}
+
+header a:active {
   text-decoration: none;
   color: #37fc06;
 }
 
-a:hover {
+header a:hover {
   color: #f70404;
   font-weight: bolder;
   -webkit-text-decoration: solid;
@@ -79,7 +89,7 @@ placeholder-shown {
 }
 
 .bordesRedondeados {
-  border-radius: 5%;
+  border-radius: 15%;
 }
 
 #informacion {
@@ -124,13 +134,11 @@ body {
   padding-top: 10vh;
   font-size: large;
   padding-bottom: 10vh;
-  background-color: #fffeff;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 #intro2:hover {
-  background-color: bisque;
   font-size: x-large;
 }
 
@@ -276,7 +284,6 @@ h3 {
     font-weight: 900;
   }
   #people {
-    opacity: 30%;
     width: auto;
     height: auto;
     background-size: cover;
@@ -304,23 +311,52 @@ h3 {
   }
 }
 
-.icon__yellow-fb {
+.serv-tra {
   color: blue;
 }
 
-.icon__yellow-ig {
+.serv-ed {
   color: blueviolet;
 }
 
-.icon__yellow-in {
+.serv-cor {
   color: darkblue;
 }
 
-.icon__yellow-wp {
-  color: yellow;
+.serv-sub {
+  color: green;
 }
 
-.color-muestra {
-  background-color: yellow;
+.serv-loc {
+  color: red;
+}
+
+.serv-int {
+  color: grey;
+}
+
+.copyright {
+  background-color: aqua;
+}
+
+.titulos,
+.titulos--2 {
+  font-size: xx-large;
+}
+
+.titulos--2 {
+  color: green;
+}
+
+.btnEnviar {
+  display: inline-block;
+  padding: 5px;
+  background-color: green;
+}
+
+.btnCancelar {
+  display: inline-block;
+  padding: 5px;
+  background-color: red;
 }
 /*# sourceMappingURL=mis_estilos.css.map */
