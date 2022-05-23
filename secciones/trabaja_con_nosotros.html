@@ -87,29 +87,61 @@
           nuevas oportunidades
         </h3>
         <section>
+          <div class="row">
+            <div class="col-sm-4">
           <form action="">
             <div class="mb-3">
               <label for="inputAddress" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Juan">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Juan"
+              />
             </div>
-   
+
             <div class="mb-3">
               <label for="inputAddress" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Perez">
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Perez"
+              />
             </div>
 
-        
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juanperez@hotmail.com">
-              </div>          
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="juanperez@hotmail.com"
+              />
+            </div>
 
-              <div class="mb-3">
-                <label for="inputAddress" class="form-label">Teléfono</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="+54 9 11-9999-9999">
-              </div>
-
-            <br />
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Teléfono</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="+54 9 11-9999-9999"
+              />
+            </div>
+            <div>
+              
+                Adjuntanos tu CV!
+                <div class="mb-3">
+                  <label for="formFile" class="form-label"></label>
+                  <input class="form-control" type="file" id="formFile" />
+                </div>
+              
+            </div>
+</div>
+</div>            
 
             <div>
               ¿Tenes matrícula?
@@ -118,15 +150,6 @@
             </div>
 
             <br />
-
-            <div>
-              Adjuntanos tu CV!
-              <div class="mb-3">
-                <label for="formFile" class="form-label" ></label>
-                <input class="form-control" type="file" id="formFile">
-                
-              </div>
-            </div>
 
             <br />
 
@@ -144,7 +167,7 @@
             <br />
 
             <div>
-              <input type="submit" value="Enviar" class="btnEnviar"/>
+              <input type="submit" value="Enviar" class="btnEnviar" />
               <input type="reset" value="Cancelar" class="btnCancelar" />
             </div>
           </form>
@@ -153,73 +176,63 @@
     </main>
 
     <footer>
-      <section class="footer_container">
-        <div class="row">
-          <div  class="col-sm-12 col-md-6">
-            <div>
-              <h3>Información</h3>
-              teléfono: +54 9 999 9999 <br />
-              Lunes a Viernes: 9.00 hs - 20.00 hs <br />
-              Mail de contacto:
-              <a href="mailto:info@tradulab.com">info@tradulab.com</a>
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <i class="bi bi-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/" target="_blank">
-                    <i class="bi bi-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.whatsapp.com/" target="_blank">
-                    <i class="bi bi-whatsapp"></i>
-                  </a>
-                </li>
-              </ul>
-              <div>Copyright © 2022 Dario Sotelo</div>
-            </div>
+      <div class="row justify-content-between">
+        <div class="col-xs-6 col-md-4">
+          <h3>Contacto</h3>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="ingresá tu email"
+            />
           </div>
-
-          <div class="col-sm-12 col-md-6">
-            <div>
-              <h3>Contacto</h3>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="ingresá tu email"
-                />
-              </div>
-             
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Contanos tu duda!</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-              </div>
-            </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Contanos tu duda!</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
           </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
-      </section>
+        <div class="col-xs-6 col-md-4">
+          <h3>Información</h3>
+          teléfono: +54 9 999 9999 <br />
+          Lunes a Viernes: 9.00 hs - 20.00 hs <br />
+          Mail de contacto:
+          <a href="mailto:info@tradulab.com">info@tradulab.com</a>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.whatsapp.com/" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="copyright">Copyright © 2022 Dario Sotelo</div>
+        </div>
+      </div>
     </footer>
 
     <script
