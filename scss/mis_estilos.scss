@@ -257,19 +257,10 @@ h3 {
 
 .quienes_somos {
   /* The image used */
-  background-image: url(../imagenes/fondo_quienes_somos.jpg);
-
-  // // // // /* Set a specific height */
+background-image: url(../imagenes/fondo_quienes_somos.jpg);
+color: #fff;
 min-height: 1500px;
-
-  // /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 80%;
-  color: #fff;
-  font-style: italic;
+opacity: 80%;
 }
 
 .boton_enviar {

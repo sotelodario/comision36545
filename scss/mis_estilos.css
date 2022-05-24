@@ -300,14 +300,9 @@ h3 {
 .quienes_somos {
   /* The image used */
   background-image: url(../imagenes/fondo_quienes_somos.jpg);
-  min-height: 1500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 80%;
   color: #fff;
-  font-style: italic;
+  min-height: 1500px;
+  opacity: 80%;
 }
 
 .boton_enviar {
